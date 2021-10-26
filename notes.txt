@@ -1,0 +1,31 @@
+Single page application
+
+Navbar
+    Developer's Name
+    About Me
+    Portfolio
+    Contact
+    Resume
+    [Title of current selection is highlighted]
+Content
+    Will change based on the navbar selection
+
+    About Me (selected by default)
+        Avatar of developer
+        Short bio
+    Portfolio
+        Images of 6 deployed applications
+            Link to GitHub Repo
+            Link to Deployed Application
+    Contact
+        Form
+            When cursor moves out of one of the form fields, notify that field is required if it's empty
+            Name
+            Email (while typing, be checking for valid email address)
+            Message
+    Resume
+        Link to downloadable resume and a list of proficiencies
+Footer
+    Icon link to developer's GitHub
+    Icon link to developer's LinkedIn
+    Icon link to another one of their platforms
