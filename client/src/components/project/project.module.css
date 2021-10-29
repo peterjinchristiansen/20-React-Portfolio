@@ -1,0 +1,8 @@
+.projectLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.projectLink {
+    margin: 15px;
+}

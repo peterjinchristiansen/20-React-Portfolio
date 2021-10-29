@@ -1,31 +1,59 @@
-Single page application
+Project: create a portfolio
 
-Navbar
-    Developer's Name
+Criteria
+    Single Page Application
+    Mobile-First Design
+    Use colors to customize react-bootstrap
+    Font-size should be large enough to read
+    Deploy to GitHub pages
+
+Page Content
+    Header
+    Section
+    Footer
+
+Components: Header(contains Navigation), Project, Footer
+
+Header
+    Navbar
+    Contents:
+        About Me (default)
+        Portfolio
+        Contact
+        Resume
+    On click, take to page corresponding to each section
+    Selected title should be highlighted
+    Hero
+
+Sections
     About Me
+        Recent Photo / Avatar
+        Short Bio
     Portfolio
+        Images of 6 of the developer's applications, each containing:
+            Links to deployed app
+            GitHub Repository
+            Title of Project
+            Image of deployed application
     Contact
+        Form (name, email address, message)
+        When moving cursor outside of form without text, get notification that it's required
+        In email input, notification if it's invalid (on each change)
     Resume
-    [Title of current selection is highlighted]
-Content
-    Will change based on the navbar selection
+        Link to downloadable resume
+        List of developer's proficiencies
 
-    About Me (selected by default)
-        Avatar of developer
-        Short bio
-    Portfolio
-        Images of 6 deployed applications
-            Link to GitHub Repo
-            Link to Deployed Application
-    Contact
-        Form
-            When cursor moves out of one of the form fields, notify that field is required if it's empty
-            Name
-            Email (while typing, be checking for valid email address)
-            Message
-    Resume
-        Link to downloadable resume and a list of proficiencies
 Footer
-    Icon link to developer's GitHub
-    Icon link to developer's LinkedIn
-    Icon link to another one of their platforms
+    Text of icon links to developer's:
+        GitHub
+        LinkedIn
+        Profile on 3rd platform
+
+README
+    Description
+    Screenshot
+    Link to Application
+
+Submission
+    URL of deployed application
+    URL of GitHub Replository
