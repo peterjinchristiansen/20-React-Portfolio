@@ -2,7 +2,12 @@
     background-color: var(--flickr-pink);
 }
 
-.link {
+.inactive {
     color: var(--purple-2);
-    margin-left: 10px;
+    margin: 7px;
+}
+
+.active {
+    color: white;
+    margin: 7px;
 }

@@ -2,9 +2,9 @@ import style from './footer.module.css'
 import icons from '../../data/icons'
 
 const Footer = () => {
-    const getIcon = ({ picture, link }) => {
+    const getIcon = ({ id, picture, link }) => {
         return(
-            <a href={link} target='_blank' className={style.icon}>{picture}</a>
+            <a key={id} href={link} rel='noreferrer' target='_blank' className={style.icon}>{picture}</a>
         )
     }
     return(

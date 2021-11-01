@@ -1,24 +1,25 @@
-import React from 'react';
-import Header from './components/header/Header';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './components/content/about/About';
-import Projects from './components/content/projects/Projects';
-import Contact from './components/content/contact/Contact';
-import Resume from './components/content/resume/Resume';
+import Header from './components/header/Header'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import About from './components/content/about/About'
+import Footer from './components/footer/Footer'
+import links from './data/links'
 
-function App() {
-  return (
+const App = () => {
+    const getLink = ({ id, path, component }) => {
+        return <Route key={id} path={path} component={component} />
+    }
+    return (
     <Router>
-      <Header />
-      <Switch>
-        <Route exact path='/' component={About} />
-        <Route path='/about' component={About} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/resume' component={Resume} />
-      </Switch>
+        <Header />
+        <div className='content'>
+            <Switch>
+                <Route exact path='/' component={About} />
+                {links.map(link => getLink(link))}
+            </Switch>
+        </div>
+        <Footer />
     </Router>
-  );
+    );
 }
 
-export default App;
+export default App

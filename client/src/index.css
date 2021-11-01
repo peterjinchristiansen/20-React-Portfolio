@@ -13,8 +13,8 @@
     --vivid-sky-blue: #4cc9f0ff;
 }
 
-* {
-    margin: 0;
+*::before::after {
+    margin: 0 ;
     padding: 0;
 }
 
@@ -29,11 +29,11 @@ a {
 
 .header {
     max-height: 200px;
+    overflow: hidden;
 }
 
 .content {
     min-height: calc(100vh - 255px);
-    padding: 0;
 }
 
 .footer {
@@ -41,4 +41,12 @@ a {
     justify-content: center;
     height: 55px;
     background-color: var(--flickr-pink);
+}
+
+.active {
+    color: yellow;
+}
+
+.unactive {
+    color: white;
 }

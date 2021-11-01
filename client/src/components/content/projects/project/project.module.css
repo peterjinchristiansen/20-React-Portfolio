@@ -1,0 +1,17 @@
+.card {
+    margin-top: 10px;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.projectLink {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.image {
+    border: solid black 5px;
+}
