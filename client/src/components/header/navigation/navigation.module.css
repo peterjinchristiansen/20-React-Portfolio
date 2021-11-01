@@ -1,3 +1,8 @@
-.navCustom {
+.navbar {
     background-color: var(--flickr-pink);
+}
+
+.link {
+    color: var(--purple-2);
+    margin-left: 10px;
 }

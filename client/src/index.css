@@ -20,5 +20,25 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: var(--ultramarine-blue);
+    background-color: var(--vivid-sky-blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    max-height: 200px;
+}
+
+.content {
+    min-height: calc(100vh - 255px);
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    background-color: var(--flickr-pink);
 }

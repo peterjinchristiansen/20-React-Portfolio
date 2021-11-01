@@ -1,0 +1,18 @@
+.title {
+    color: var(--purple-2);
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.projectLink {
+    margin: 15px;
+}
