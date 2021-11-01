@@ -8,6 +8,9 @@ const App = () => {
     const getLink = ({ id, path, component }) => {
         return <Route key={id} path={path} component={component} />
     }
+    if(window.location.pathname === '/20-React-Portfolio') {
+        window.location.href = ('/about')
+    }
     return (
         <Router>
             <Header />

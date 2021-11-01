@@ -24,8 +24,6 @@ const Navigation = () => {
                 break;
         }
     }, [path])
-
-    console.log(window.location.pathname)
     const getLink = ({ id, path, title }) => {
         let isActive = false
         if(active === title) isActive = true

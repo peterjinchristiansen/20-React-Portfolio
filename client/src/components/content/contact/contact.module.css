@@ -15,3 +15,7 @@
 .buttonSubmit:hover {
     background-color: var(--purple-2)
 }
+
+.errors {
+    color: red;
+}

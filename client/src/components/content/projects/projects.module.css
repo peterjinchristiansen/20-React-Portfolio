@@ -8,6 +8,11 @@
     margin: auto;
 }
 
+@media screen and (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
 .cards {
     display: grid;
     gap: 3rem;

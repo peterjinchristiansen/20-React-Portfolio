@@ -48,7 +48,7 @@ const Contact = () => {
         <div className={style.div}>
         <h1>Contact</h1>
         {errors.map(error => {
-            return <h5 key={error}>{error}</h5>
+            return <h5 key={error} className={style.errors}>{error}</h5>
         })}
         <form className='form-control'>
             <label htmlFor='name'>Name</label>
