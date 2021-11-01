@@ -3,10 +3,10 @@ import style from './header.module.css'
 
 const Header = ({ setActive }) => {
   return (
-      <div className='header'>
+    <div className='header'>
         <Navigation setActive={setActive} />
         <div className={style.hero}></div>
-      </div>
+    </div>
   );
 };
 

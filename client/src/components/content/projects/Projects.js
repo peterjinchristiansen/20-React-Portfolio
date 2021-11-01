@@ -7,7 +7,7 @@ const Projects = () => {
         <div className={style.projects}>
             <h1 className={style.title}>Projects</h1>
             <div className={style.cards}>
-            {projects.map(project => <Project key={project.id} {...project} />)}
+                {projects.map(project => <Project key={project.id} {...project} />)}
             </div>
         </div>
     )

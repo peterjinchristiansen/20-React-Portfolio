@@ -14,7 +14,15 @@ const Resume = () => {
     }
     return(
         <div className={style.div}>
-            <h1>Resume <a href='https://github.com/peterjinchristiansen' target='_blank' rel='noreferrer'><BsDownload /></a></h1>
+            <h1>Resume
+                <a
+                    href='https://github.com/peterjinchristiansen'
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    <BsDownload />
+                </a>
+            </h1>
             <h3 className={style.title}>Proficiencies</h3>
             <div className={style.container}>
                 {proficiencies.map(icon => getIcon(icon))}

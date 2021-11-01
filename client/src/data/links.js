@@ -9,20 +9,17 @@ const links = [
         path: '/about',
         component: About,
         title: 'About'
-    },
-    {
+    }, {
         id: 2,
         path: '/projects',
         component: Projects,
         title: 'Projects'
-    },
-    {
+    }, {
         id: 3,
         path: '/contact',
         component: Contact,
         title: 'Contact'
-    },
-    {
+    }, {
         id: 4,
         path: '/resume',
         component: Resume,

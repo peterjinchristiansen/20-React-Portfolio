@@ -13,7 +13,7 @@
     --vivid-sky-blue: #4cc9f0ff;
 }
 
-*::before::after {
+* {
     margin: 0 ;
     padding: 0;
 }

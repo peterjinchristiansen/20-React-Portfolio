@@ -52,13 +52,41 @@ const Contact = () => {
         })}
         <form className='form-control'>
             <label htmlFor='name'>Name</label>
-            <input className='form-control' type='text' name='Name' onMouseLeave={e => cursorOut(e)} autoComplete='off' defaultValue={values[0]} onChange={e => valueChanged(e, 0)} /><br />
+            <input
+                className='form-control'
+                type='text'
+                name='Name'
+                onMouseLeave={e => cursorOut(e)}
+                autoComplete='off'
+                defaultValue={values[0]}
+                onChange={e => valueChanged(e, 0)}
+            /><br />
             <label htmlFor="email">E-Mail Address{!validEmail ? ' (Must be valid)' : ''}</label>
-            <input className='form-control' type="email" name='E-Mail'  onMouseLeave={e => cursorOut(e)} autoComplete='off' defaultValue={values[1]} onChange={e => valueChanged(e, 1)} /><br />
+            <input
+                className='form-control'
+                type="email" name='E-Mail'
+                onMouseLeave={e => cursorOut(e)}
+                autoComplete='off' defaultValue={values[1]}
+                onChange={e => valueChanged(e, 1)}
+            /><br />
             <label htmlFor="message">Message</label>
-            <textarea className='form-control' name="Message" cols="30" rows="5" onMouseLeave={e => cursorOut(e)} autoComplete='off' defaultValue={values[2]} onChange={e => valueChanged(e, 2)} />
-            <br />
-            <button type='submit' onClick={e => handleSubmit(e)}className={style.buttonSubmit}>Send Message</button>
+            <textarea
+                className='form-control'
+                name="Message"
+                cols="30"
+                rows="5"
+                onMouseLeave={e => cursorOut(e)}
+                autoComplete='off'
+                defaultValue={values[2]}
+                onChange={e => valueChanged(e, 2)}
+            /><br />
+            <button
+                type='submit'
+                onClick={e => handleSubmit(e)}
+                className={style.buttonSubmit}
+            >
+                Send Message
+            </button>
         </form>
     </div>
     )

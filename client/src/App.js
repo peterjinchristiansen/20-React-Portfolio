@@ -9,17 +9,17 @@ const App = () => {
         return <Route key={id} path={path} component={component} />
     }
     return (
-    <Router>
-        <Header />
-        <div className='content'>
-            <Switch>
-                <Route exact path='/' component={About} />
-                {links.map(link => getLink(link))}
-            </Switch>
-        </div>
-        <Footer />
-    </Router>
-    );
+        <Router>
+            <Header />
+            <div className='content'>
+                <Switch>
+                    <Route exact path='/' component={About} />
+                    {links.map(link => getLink(link))}
+                </Switch>
+            </div>
+            <Footer />
+        </Router>
+    )
 }
 
 export default App

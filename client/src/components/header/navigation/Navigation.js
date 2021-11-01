@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -8,6 +8,24 @@ import links from '../../../data/links'
 
 const Navigation = () => {
     const [active, setActive] = useState('About')
+    const path = window.location.pathname
+    useEffect(() => {
+        switch (path) {
+            case '/projects':
+                setActive('Projects')
+                break;
+            case '/contact':
+                setActive('Contact')
+                break;
+            case '/resume':
+                setActive('Resume')
+                break;
+            default:
+                break;
+        }
+    }, [path])
+
+    console.log(window.location.pathname)
     const getLink = ({ id, path, title }) => {
         let isActive = false
         if(active === title) isActive = true
